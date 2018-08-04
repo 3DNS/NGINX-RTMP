@@ -4,7 +4,7 @@ Example Configs / WebView to show your RTMP Stream
 ### Features
 - Supported Debian / Ubuntu (x64 / ARM e.g. Raspberry Pi)
 - Responsive & mobile friendly view
-- Count current viewer
+- Show current viewer
 - FLV / RTMP low latency
 - Show offline / online state
 - Show if exist last Record
