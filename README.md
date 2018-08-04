@@ -46,3 +46,15 @@ rtmp {
 #### Optional: Recording could enable in in the RTMP Config ```vhost_rtmp/default``` uncomment the last two lines.
 
 ## Have Fun to share your Stream with your friends.
+
+
+### Verwendete Libraries
+[Materialize](http://materializecss.com/), a CSS Framework based on material design
+
+[Plyr](https://plyr.io), Video Player
+
+[RTMP-FLV](https://github.com/winshining/nginx-http-flv-module), nginx-http-flv-module has all features that nginx-rtmp-module provides.
+
+[JQuery](https://jquery.com/)
+
+[Font Awesome](http://fontawesome.io), Symbole & Icon's
