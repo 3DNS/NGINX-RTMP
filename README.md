@@ -37,7 +37,7 @@ rtmp {
 2. Copy the vhosts folders in your conf area /usr/local/nginx/conf
 3. Copy the www folder in your /home mount.
 4. Execute ```pkill nginx; sleep 1; /usr/local/nginx/sbin/nginx``` start your Webserver.
-5. Now put in example in OBS your Custom Server in the Streaming Settings Example: ```rtmp.//IP/Domain/user``` & use the Stream Key like ```stream?key=test1337```
+5. Now put in example in OBS your Custom Server in the Streaming Settings Example: ```rtmp://IP/Domain/user``` & use the Stream Key like ```stream?key=test1337```
 
 #### Notice: change your Key in the /home/www/rtmp/auth/user.php 
 
