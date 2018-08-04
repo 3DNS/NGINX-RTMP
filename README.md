@@ -48,7 +48,7 @@ rtmp {
 ## Have Fun to share your Stream with your friends.
 
 
-### Verwendete Libraries
+### Libraries
 [Materialize](http://materializecss.com/), a CSS Framework based on material design
 
 [Plyr](https://plyr.io), Video Player
