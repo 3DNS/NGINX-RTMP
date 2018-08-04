@@ -22,7 +22,7 @@ Add in your sources.lst
 After this execute ``` apt-get update && apt-get install nginx-rtmp ```
 
 
-1. Put the RTMP Content in your exist NGINX Conf file / your use our fully nginx.conf in the conf folder.
+1. Put the RTMP Content in your exist NGINX Conf file / or use our fully nginx.conf in the conf folder.
 
 ```
 rtmp {
