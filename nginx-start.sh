@@ -1,0 +1,1 @@
+pkill nginx; sleep 1; /usr/local/nginx/sbin/nginx

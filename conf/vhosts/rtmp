@@ -1,0 +1,50 @@
+server {
+	listen 8080;
+	root /home/www/rtmp;
+	index index.php;
+
+	server_name _;
+
+	location @rewrite {
+    	rewrite ^/(.*)$ /index.php?channel=$1 last;
+	}
+
+	location / {
+	open_file_cache off;
+	add_header 'Cache-Control' 'no-cache';
+	add_header 'Access-Control-Allow-Origin' '*' always;
+	add_header 'Access-Control-Expose-Headers' 'Content-Length';
+    	try_files $uri $uri/ @rewrite;
+	autoindex off;  
+	}
+        location /stats {
+            rtmp_stat all;
+            rtmp_stat_stylesheet stat.xsl;
+	    #allow 127.0.0.1;
+            #deny  all;
+        }
+
+        location /auth {
+	    allow 127.0.0.1;
+            deny  all;
+	    return 404;
+        }
+
+	location ~ /(includes|secure|ips|bans|database) {
+   	deny all;
+   	return 404;
+	}
+
+        location /flv {
+	flv_live on;
+	chunked_transfer_encoding off;
+	add_header 'Access-Control-Allow-Origin' '*'; 
+	add_header 'Access-Control-Allow-Credentials' 'true'; 
+        }
+
+        location /player/state {
+	}
+
+	include /usr/local/nginx/conf/conf/error.conf;
+	include /usr/local/nginx/conf/conf/php.conf;
+	}
