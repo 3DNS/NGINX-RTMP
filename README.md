@@ -14,11 +14,11 @@ Create your own Realtime / low latency Stream with a Addon 4 NGINX. I use Plyr a
 
 #### Requirements
 - Debian x64 or ARMx86
-- PHP7.0 or 7.1 (Edit ```conf/conf/php.conf```)
+- PHP7.0 or 7.1 (Edit conf/conf/php.conf)
 - Lib's like XSL / GEO
 
 #### Ports
-1935 TCP & 8080 TCP
+1935 TCP & 8080 TCP (Port 80 with valid Server_name in conf/vhosts/rtmp configurable)
 
 # Setup
 Install our NGINX-RTMP Version on your Debian / Ubuntu Maschine.
