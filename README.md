@@ -6,19 +6,18 @@ Create your own Realtime / low latency Stream with a Addon 4 NGINX. I use Plyr a
 ### Features
 - Supported Debian / Ubuntu (x64 / ARM e.g. Raspberry Pi)
 - Responsive & mobile friendly view
-- Show current viewer
+- Show current viewer / offline & online state
 - FLV / RTMP low latency
-- Show offline / online state
 - Show if exist last Record
 - Easy to setup
 
 #### Requirements
 - Debian x64 or ARMx86
-- PHP7.0 or 7.1 (Edit conf/conf/php.conf)
+- PHP7.0 or 7.1 (Edit ```conf/conf/php.conf```)
 - Lib's like XSL / GEO
 
 #### Ports
-1935 TCP & 8080 TCP (Port 80 with valid Server_name in conf/vhosts/rtmp configurable)
+1935 TCP & 8080 TCP (Port 80 with valid Server_name in ```conf/vhosts/rtmp``` configurable)
 
 # Setup
 Install our NGINX-RTMP Version on your Debian / Ubuntu Maschine.
@@ -42,7 +41,7 @@ rtmp {
  }
 ```
 2. Copy the vhosts folders in your conf area /usr/local/nginx/conf
-3. Copy the www folder in your ```/home mount```.
+3. Copy the www folder in your ```/home``` mount.
 4. Execute ```pkill nginx; sleep 1; /usr/local/nginx/sbin/nginx``` start your Webserver.
 5. Now put in example in OBS your Custom Server in the Streaming Settings Example: ```rtmp://IP/Domain/user``` & use the Stream Key like ```stream?key=test1337```
 
