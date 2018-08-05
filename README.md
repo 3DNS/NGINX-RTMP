@@ -1,6 +1,8 @@
 # NGINX-RTMP
 Example Configs / WebView to show your RTMP Stream
 
+Create your own Realtime / low latency Stream with a Addon 4 NGINX. I use Plyr as HTML5 Player & make a playback with FLV.js. NGINX will create a FLV HTTP Stream to make a working container 4 the HTML5 Player.
+
 ### Features
 - Supported Debian / Ubuntu (x64 / ARM e.g. Raspberry Pi)
 - Responsive & mobile friendly view
