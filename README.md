@@ -53,6 +53,8 @@ rtmp {
 
 [Plyr](https://plyr.io), Video Player
 
+[FLV.js](https://github.com/Bilibili/flv.js), HTML5 Player lib to make FLV over HTTP viewable
+
 [RTMP-FLV](https://github.com/winshining/nginx-http-flv-module), nginx-http-flv-module has all features that nginx-rtmp-module provides.
 
 [JQuery](https://jquery.com/)
