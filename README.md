@@ -10,6 +10,11 @@ Example Configs / WebView to show your RTMP Stream
 - Show if exist last Record
 - Easy to setup
 
+#### Requirements
+- Debian x64 or ARMx86
+- PHP7.0 or 7.1 (Edit ```conf/conf/php.conf```)
+- Lib's like XSL / GEO
+
 #### Ports
 1935 TCP & 8080 TCP
 
