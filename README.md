@@ -21,14 +21,14 @@ Create your own Realtime / low latency Stream with a Addon 4 NGINX. I use Plyr a
 
 # Setup
 Install our NGINX-RTMP Version on your Debian / Ubuntu Maschine.
-Add in your sources.lst
+Add in your ```sources.lst```
 
 ```deb [ trusted=yes ] http://apt.3dns.eu/debian ./ ```
 
 After this execute ``` apt-get update && apt-get install nginx-rtmp ```
 
 
-1. Put the RTMP Content in your exist NGINX Conf file / or use our fully nginx.conf in the conf folder.
+1. Put the RTMP Content in your exist NGINX Conf file / or use our fully ```nginx.conf``` in the ```conf``` folder.
 
 ```
 rtmp {
@@ -40,8 +40,8 @@ rtmp {
 
  }
 ```
-2. Copy the vhosts folders in your conf area /usr/local/nginx/conf
-3. Copy the www folder in your ```/home``` mount.
+2. Copy the ```vhosts``` folders in your conf area ```/usr/local/nginx/conf```
+3. Copy the ```www``` folder in your ```/home``` mount.
 4. Execute ```pkill nginx; sleep 1; /usr/local/nginx/sbin/nginx``` start your Webserver.
 5. Now put in example in OBS your Custom Server in the Streaming Settings Example: ```rtmp://IP/Domain/user``` & use the Stream Key like ```stream?key=test1337```
 
