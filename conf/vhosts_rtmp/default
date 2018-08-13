@@ -1,8 +1,8 @@
             application user {
 		include /usr/local/nginx/conf/conf/settings.conf;
 		on_publish http://127.0.0.1:8080/auth/user.php;
-		exec_publish touch /home/www/panel/libs/rtmp/player/state/user;
-		exec_publish_done rm /home/www/panel/libs/rtmp/player/state/user;
+		exec_publish touch /home/www/rtmp/player/state/user;
+		exec_publish_done rm /home/www/rtmp/player/state/user;
                #record all;
                #record_path /home/www/rtmp/records/user;
 		}
