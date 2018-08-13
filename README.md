@@ -66,3 +66,8 @@ rtmp {
 [JQuery](https://jquery.com/)
 
 [Font Awesome](http://fontawesome.io), Symbole & Icon's
+
+#### Special Thanks to
+- Igor Sysoev (NGINX)
+- Roman Arutyunyan (RTMP Lib)
+- Winshining (Fork & HTTP FLV Support)
