@@ -14,19 +14,16 @@ Create your own Realtime / low latency Stream with a Addon 4 NGINX. I use Plyr a
 #### Requirements
 - Debian x64 or ARMx86
 - PHP7.0 or 7.1 (Edit ```conf/conf/php.conf```)
-- Lib's like XSL / GEO
+- Buildtools / Essentials / checkinstall Packages 
+- Lib's like XSL and so on....
 
 #### Ports
 1935 TCP & 8080 TCP (Port 80 with valid Server_name in ```conf/vhosts/rtmp``` configurable)
 
 # Setup
-Install our NGINX-RTMP Version on your Debian / Ubuntu Maschine.
-Add in your ```sources.lst```
+Compile the NGINX-RTMP Version on your Debian / Ubuntu Maschine.
 
-```deb [ trusted=yes ] http://apt.3dns.eu/debian ./ ```
-
-After this execute ``` apt-get update && apt-get install nginx-rtmp ```
-
+Execute ```nginx-compile.sh``` to start the compile process.
 
 1. Put the RTMP Content in your exist NGINX Conf file / or use our fully ```nginx.conf``` in the ```conf``` folder.
 
